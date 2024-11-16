@@ -11,7 +11,7 @@ import SwiftUI
 struct NeighborHaradaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TitleView()
         }
     }
 }
