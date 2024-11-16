@@ -10,16 +10,17 @@ import SwiftUI
 struct GuestView: View {
     @Binding var navigatePath: [NavigationDestination]
     var body: some View {
-        VStack(spacing: 30) {
-            Text("GuestView（ここでマッチングを行う）")
-            
-            Button {
-                navigatePath.append(.game)
-            } label: {
-                Text("ゲームを開始する（仮）")
-            }
-            .buttonStyle(.borderedProminent)
-        }
+//        VStack(spacing: 30) {
+//            Text("GuestView（ここでマッチングを行う）")
+//            
+//            Button {
+//                navigatePath.append(.game)
+//            } label: {
+//                Text("ゲームを開始する（仮）")
+//            }
+//            .buttonStyle(.borderedProminent)
+//        }
+        UnityView()
     }
 }
 

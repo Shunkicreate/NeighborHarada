@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9ECE23132CE89CA50025699D /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECE23122CE89CA50025699D /* UnityFramework.framework */; };
-		9ECE23142CE89CA50025699D /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECE23122CE89CA50025699D /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E43BAF722CE8CE2C00ACE788 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECE23122CE89CA50025699D /* UnityFramework.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		E43BAF732CE8CE5600ACE788 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECE23122CE89CA50025699D /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9ECE23152CE89CA50025699D /* Embed Frameworks */ = {
+		E43BAF742CE8CE5600ACE788 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9ECE23142CE89CA50025699D /* UnityFramework.framework in Embed Frameworks */,
+				E43BAF732CE8CE5600ACE788 /* UnityFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -26,13 +26,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9ECE23122CE89CA50025699D /* UnityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Unity-iPhone-hknzhlvrnbqpsmftzpqfgmstbccf/Build/Products/Debug-iphoneos/UnityFramework.framework"; sourceTree = "<group>"; };
+		9ECE23122CE89CA50025699D /* UnityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = "<group>"; };
 		E4DA8CD22CE89188004F510B /* NeighborHarada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeighborHarada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E43BAFDF2CE8D42E00ACE788 /* Exceptions for "NeighborHarada" folder in "NeighborHarada" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E4DA8CD12CE89188004F510B /* NeighborHarada */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E4DA8CD42CE89188004F510B /* NeighborHarada */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E43BAFDF2CE8D42E00ACE788 /* Exceptions for "NeighborHarada" folder in "NeighborHarada" target */,
+			);
 			path = NeighborHarada;
 			sourceTree = "<group>";
 		};
@@ -43,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ECE23132CE89CA50025699D /* UnityFramework.framework in Frameworks */,
+				E43BAF722CE8CE2C00ACE788 /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +98,7 @@
 				E4DA8CCE2CE89188004F510B /* Sources */,
 				E4DA8CCF2CE89188004F510B /* Frameworks */,
 				E4DA8CD02CE89188004F510B /* Resources */,
-				9ECE23152CE89CA50025699D /* Embed Frameworks */,
+				E43BAF742CE8CE5600ACE788 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,13 +297,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NeighborHarada/Preview Content\"";
 				DEVELOPMENT_TEAM = 9UHS7564UD;
+				ENABLE_DEBUG_DYLIB = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NeighborHarada/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,6 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taishin-miyamoto.NeighborHarada";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/taishin.miyamoto/Desktop/NeighborHarada/NeighborHarada/Unity/NeighborHarada-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,13 +334,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NeighborHarada/Preview Content\"";
 				DEVELOPMENT_TEAM = 9UHS7564UD;
+				ENABLE_DEBUG_DYLIB = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NeighborHarada/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taishin-miyamoto.NeighborHarada";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/taishin.miyamoto/Desktop/NeighborHarada/NeighborHarada/Unity/NeighborHarada-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
