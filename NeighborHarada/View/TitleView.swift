@@ -28,14 +28,15 @@ struct TitleView: View {
                 }
 
                 VStack(spacing: 30) {
-                    Text("タイトルが入ります")
-                        .font(.title)
+                    Text("ハラハラたいぞうゲーム")
+                        .font(Font.custom("Mimi_font-Regular", size: 42))
                         .foregroundColor(.white)
 
                     Button {
                         navigatePath.append(.host)
                     } label: {
                         Text("ホスト")
+                        .font(Font.custom("Mimi_font-Regular", size: 32))
                     }
                     .buttonStyle(.borderedProminent)
 
@@ -43,6 +44,7 @@ struct TitleView: View {
                         navigatePath.append(.guest)
                     } label: {
                         Text("ゲスト")
+                        .font(Font.custom("Mimi_font-Regular", size: 32))
                     }
                     .buttonStyle(.borderedProminent)
                 }
