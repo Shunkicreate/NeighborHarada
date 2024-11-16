@@ -6,7 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9ECE23132CE89CA50025699D /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECE23122CE89CA50025699D /* UnityFramework.framework */; };
+		9ECE23142CE89CA50025699D /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECE23122CE89CA50025699D /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9ECE23152CE89CA50025699D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9ECE23142CE89CA50025699D /* UnityFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9ECE23122CE89CA50025699D /* UnityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Unity-iPhone-hknzhlvrnbqpsmftzpqfgmstbccf/Build/Products/Debug-iphoneos/UnityFramework.framework"; sourceTree = "<group>"; };
 		E4DA8CD22CE89188004F510B /* NeighborHarada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeighborHarada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -23,16 +43,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ECE23132CE89CA50025699D /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9ECE23112CE89CA50025699D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ECE23122CE89CA50025699D /* UnityFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E4DA8CC92CE89188004F510B = {
 			isa = PBXGroup;
 			children = (
 				E4DA8CD42CE89188004F510B /* NeighborHarada */,
+				9ECE23112CE89CA50025699D /* Frameworks */,
 				E4DA8CD32CE89188004F510B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +85,7 @@
 				E4DA8CCE2CE89188004F510B /* Sources */,
 				E4DA8CCF2CE89188004F510B /* Frameworks */,
 				E4DA8CD02CE89188004F510B /* Resources */,
+				9ECE23152CE89CA50025699D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
