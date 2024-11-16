@@ -51,7 +51,7 @@ class UpdateBallStateMessage:Codable {
         let encoder = JSONEncoder()
         
         do {
-            let jsonData = try encoder.encode(self.ballState)
+            let jsonData = try encoder.encode(self)
             let jsonString = String(data: jsonData, encoding: .utf8)
             return jsonString
         } catch {
